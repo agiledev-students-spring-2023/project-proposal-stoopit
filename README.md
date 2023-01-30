@@ -2,7 +2,7 @@
 
 ### Collaboration
 
-[Corey Chen](https://github.com/coherency1), [Malachi Daniel](https://github.com/163dgm), and [Kai Finney Elwood-Dieu](https://github.com/KaiElwood)
+Corey Chen, Malachi Daniel, and Kai Finney Elwood-Dieu
 
 ### Project title
 
@@ -22,16 +22,18 @@ Stooping itself is important to continue as it promotes sustainability and saves
 
 ### For whom?
 
-Who will this software be for? These people are your end-users or customers.
-
-Do not make software for imaginary users who do not exist - you must have real people as your initial end-users. Tell us who they are. For example, is it for a particular type of business, mass consumer, a campus office, a professor, or friends or family, or ... people just like you.
-
-Understanding who your end-users are, and ideally speaking with some along the way, will help you refine your designs to be suitable for your audience, and understand whether you have succeeded at the end or not.
+Our end-users are people just like us; anyone can stoop and that's the beauty of it. We are trying to make stooping easier and more accessible for everyone.
 
 ### How?
 
-A description of what the system will do from an end-user's perspective. Be as complete as necessary to fully explain the system, but do not worry about technical implementation - this will be developed in subsequent work.
+Users will navigate to the web app and be greeted with a vertical scrolling feed of items found near them (by default, it will be 1 mile). Users will be able to change their feed settings, such as filtering by item (like a specific type of furniture) or changing the mile radius to allow more items to be shown in the feed. When logged in, users can upload a stoop that they find. They do this by navigating to the uploading form. The form has fields to upload or take an image, write a title, description, category (these will be pre-set to use for filtering), and a location (if users don't know the specific address, they can click a button to autofill with their current location). Once uploaded, other users in the area can see the item on their feed when they refresh.
 
 ### Scope
 
-A brief justification that the proposal is neither too easy nor too ambitions for a group of approximately 4 - 6 programmers to undertake in one semester.
+The scope of this app is very easy to extend and add more features to. In its simplest form, this project is not too easy as it goes beyond a basic CRUD web application.
+
+In terms of the frontend, it requires a user-friendly and mobile-first UI that will also need to utilize map and location APIs, along with authentication and form validation to create an item (form validation could either be done on the frontend or backend). This could be effectively split between a group of programmers, one to handle the UI, authentication and validation, maps and location, and connecting with the backend could be split between a group of programmers in one sprint. The backend will need to effectively parse and store location data of items, handle authentication, and handle location-based queries for items in the database. Furthermore, much of this can be accomplished using native browser and Node APIs; this means we can effectively increase or lower the time spent based on whether or not we install 3rd-party libraries.
+
+If the application is easier than expected, there are many potential improvements and features that could be added. Our backend could switch from using REST API to a GraphQL-based architecture, leveraging subscriptions, so users can get a true real-time experience. This prevents needing to refresh or click a button to fetch new items for the feed; instead, it could be updated live. We can also add text notifications when an item has popped up in your area or implement a chat with uploaders of items for more info before going out to stoop. There are many ways we can add to this app, but providing users with a centralized and seamless way to view and upload items near them already solves many problems for the stooping community.
+
+It suffices to say that the amount of work can respond to change and can be determined and completed by a group of 4-6 programmers in one semester.
